@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://new-york-census.vercel.app"><strong>🌐 Try it live → new-york-census.vercel.app</strong></a>
+  <a href="https://new-york-census.sophieshih.com"><strong>🌐 Try it live → new-york-census.sophieshih.com</strong></a>
 </p>
 
 <p align="center">
