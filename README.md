@@ -1,6 +1,26 @@
-# The New York Census Line
+<h1 align="center">🚇 The New York Census Line</h1>
 
-A subway-map tour of New York City's five boroughs built from public data.
+<p align="center">
+  <strong>A subway-map tour of New York City's five boroughs, built from public data.</strong><br>
+  Ride the Q, 7 and 4 lines through housing, immigration and the economy, then end at your own New York on the A.
+</p>
+
+<p align="center">
+  <a href="https://new-york-census.vercel.app"><strong>🌐 Try it live → new-york-census.vercel.app</strong></a>
+</p>
+
+<p align="center">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-black?logo=next.js">
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white">
+  <img alt="D3" src="https://img.shields.io/badge/D3-geo%20%C2%B7%20scale%20%C2%B7%20shape-F9A03C?logo=d3.js&logoColor=white">
+  <img alt="Data: US Census ACS" src="https://img.shields.io/badge/Data-US%20Census%20ACS-1f4e79">
+  <img alt="Deployed on Vercel" src="https://img.shields.io/badge/Deployed%20on-Vercel-000?logo=vercel">
+</p>
+
+---
+
+## The lines
 
 | Line | Topic | What's on it |
 |---|---|---|
@@ -10,6 +30,14 @@ A subway-map tour of New York City's five boroughs built from public data.
 | **A** | My New York | Your own photo map: the final destination. |
 
 Each line ends with "service notices", which are findings computed from the data (correlations, gaps, trends). None of them are typed in by hand.
+
+## Highlights
+
+- **Real maps, no tile service:** all 55 NYC neighborhoods (PUMAs) drawn as SVG with d3-geo, rotated so Manhattan stands upright.
+- **3D without WebGL:** the immigration hologram is plain CSS 3D transforms, and it responds to dragging, sliders or tilting your phone.
+- **Honest numbers:** every estimate keeps its margin of error, and trends are inflation-adjusted with BLS CPI-U.
+- **Findings written by the data:** each line's "service notices" are correlations, gaps and trends computed at build time.
+- **Fully static:** `next build` exports a static site you can host anywhere.
 
 ## Run it
 
@@ -47,3 +75,8 @@ See the site's **Data & Methods** page for definitions and the MOE formulas.
 ## Stack
 
 Next.js 15 (App Router, static export) · React 19 · TypeScript · d3-geo / d3-shape / d3-scale for the SVG maps and charts · plain CSS 3D transforms for the hologram (no WebGL). There's no map-tile service, so there's no API token to manage.
+
+## About
+
+Built by **[Sophie Shih](https://sophieshih.com)**. Ideas and feedback are welcome:
+[open an issue](https://github.com/sophiecodie/New-York-Census/issues).
